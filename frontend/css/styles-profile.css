@@ -1,0 +1,120 @@
+/* -------- General -------- */
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8fdff, #eaf6ff);
+  color: #002233;
+  min-height: 100vh;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------- Wrapper -------- */
+.wrap {
+  width: 100%;
+  max-width: 880px;
+}
+
+/* -------- Top Bar -------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar h1 {
+  margin: 0;
+  color: #0b66ff;
+}
+
+/* -------- Card Style -------- */
+.card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(6, 44, 90, 0.06);
+}
+
+/* -------- Headings -------- */
+h2 {
+  margin: 0 0 6px 0;
+  color: #0b66ff;
+}
+
+/* -------- Muted Text -------- */
+.muted {
+  color: #5f6b78;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* -------- Form Elements -------- */
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #112233;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e6f2ff;
+  background: #fbfeff;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+/* -------- Rows -------- */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* -------- Buttons -------- */
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Primary Button */
+.btn.primary {
+  background: linear-gradient(90deg, #0b66ff, #2b9cff);
+  color: white;
+}
+
+/* Outline Button */
+.btn.outline {
+  background: transparent;
+  border: 1px solid #d6eaff;
+  color: #0b66ff;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
