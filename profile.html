@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diagnosure — Profile</title>
+  <link rel="stylesheet" href="css/styles-profile.css" />
+  <link rel="icon" type="image/png" href="assets/logo.jpg">
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="22" height="22" rx="6" fill="#e8f5ff"/><path d="M7 12c1.5-2 3.5-3 5-3s3.5 1 5 3" stroke="#0b66ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15.5" r="1.7" fill="#0b66ff"/></svg>
+        <h1>Diagnosure</h1>
+      </div>
+      <div>
+        <button id="to-chat" class="btn primary">Go to Chat</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Tell us about yourself</h2>
+      <p class="muted">These details help us give better health suggestions.</p>
+
+      <form id="profile-form" class="form">
+        <label>
+          Full name
+          <input id="name" required placeholder="First Last" />
+        </label>
+
+        <label>
+          Age
+          <input id="age" type="number" min="0" max="120" required />
+        </label>
+
+        <label>
+          Gender
+          <select id="gender" required>
+            <option value="">Select gender</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Non-binary</option>
+            <option>Prefer not to say</option>
+          </select>
+        </label>
+
+        <label>
+          Height (cm)
+          <input id="height" type="number" min="30" max="250" placeholder="e.g., 170"/>
+        </label>
+
+        <label>
+          Weight (kg)
+          <input id="weight" type="number" min="2" max="500" placeholder="e.g., 65"/>
+        </label>
+
+        <label>
+          Known conditions (comma separated)
+          <input id="conditions" placeholder="diabetes, asthma (optional)" />
+        </label>
+
+        <label>
+          Allergies (comma separated)
+          <input id="allergies" placeholder="penicillin, pollen (optional)" />
+        </label>
+
+        <div class="row">
+          <button type="submit" class="btn primary">Save & Continue</button>
+          <button id="skip" type="button" class="btn outline">Skip</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
